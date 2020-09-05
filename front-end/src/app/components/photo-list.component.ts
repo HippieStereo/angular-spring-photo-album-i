@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {PhotoService} from '../services/photo.service';
 import {User} from '../models/user';
-import {Photo} from '.../models/photo';
+import {Photo} from '../models/photo';
 
 @Component({
     selector: 'photo-list',
