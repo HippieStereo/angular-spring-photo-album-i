@@ -28,7 +28,9 @@
               "src/resources/css/semantic.css",
               "src/resources/css/main.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/resources/js/semantic.min.js"
+            ]
           },
           "configurations": {
             "production": {
