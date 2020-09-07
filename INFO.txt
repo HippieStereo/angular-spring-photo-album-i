@@ -1,4 +1,4 @@
-INFO
+:: INFO ::
 
 Node version
 
@@ -34,3 +34,7 @@ Package                      Version
 @schematics/angular          10.1.0
 @schematics/update           0.1001.0
 rxjs                         6.6.2
+
+BDD
+
+utf8 Unicode ci
