@@ -38,3 +38,10 @@ rxjs                         6.6.2
 BDD
 
 utf8 Unicode ci
+
+REMOTE MYSQL
+Username: Y0jLyoIvXY
+Database name: Y0jLyoIvXY
+Password: oCVLfyklBQ
+Server: remotemysql.com
+Port: 3306
