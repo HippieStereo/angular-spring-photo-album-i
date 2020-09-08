@@ -8,6 +8,7 @@ import { SidePanel } from './components/side-panel.component';
 import { NavBar } from './components/nav-bar.component';
 import { PhotoService } from './services/photo.service';
 import { HttpClientModule } from '@angular/common/http';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    routing
   ],
   providers: [PhotoService],
   bootstrap: [AppComponent]
