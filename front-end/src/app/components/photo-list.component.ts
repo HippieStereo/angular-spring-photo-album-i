@@ -14,8 +14,10 @@ export class PhotoList{
 
     constructor(private photoService: PhotoService){
         this.photoService.getPhotos().subscribe(
-            data => console.log(this.photos = JSON.parse(JSON.parse(JSON.stringify(data))._body)),
-            error => console.log(error)
-        );
+            (data: any[])=>{
+                console.log(data);
+                this.photos = data;
+              } )
     }
+
 }
