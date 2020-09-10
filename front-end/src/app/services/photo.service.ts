@@ -25,14 +25,14 @@ export class PhotoService{
 
     }*/
 
-    /*getPhotosByUser(user: User){
+    getPhotosByUser(user: User){
 
         let tokenUrl_1 = "http://localhost:8080/rest/photo/photoId";
-        let headers_1 = new Headers({'Content-Type' : 'application/json', 'Authorization' : 'Bearer ' + localStorage.getItem("token")});
+        let headers_1 = new HttpHeaders({'Content-Type' : 'application/json', 'Authorization' : 'Bearer ' + localStorage.getItem("token")});
 
         return this.http.post(tokenUrl_1, JSON.stringify(user), {headers: headers_1});
 
-    }*/
+    }
 
     /*updatePhoto(photo: Photo){
 
