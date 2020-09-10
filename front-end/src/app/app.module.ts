@@ -12,6 +12,8 @@ import { RegisterService } from './services/register.service'
 import { HttpClientModule } from '@angular/common/http';
 import { routing } from './app.routing';
 import { FormsModule } from '@angular/forms';
+import { Login } from './components/login.component'
+import { LoginService } from './services/login.service'
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     PhotoList,
     SidePanel,
     NavBar,
-    Register
+    Register,
+    Login
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { FormsModule } from '@angular/forms';
   ],
   providers: [
     PhotoService,
-    RegisterService
+    RegisterService,
+    LoginService
   ],
   bootstrap: [AppComponent]
 })
