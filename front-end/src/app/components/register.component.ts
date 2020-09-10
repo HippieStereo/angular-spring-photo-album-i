@@ -25,7 +25,7 @@ export class Register{
             data => {
 
                 this.registered = true;
-                this.newUser = new User();
+                //this.newUser = new User();
 
             },
 
