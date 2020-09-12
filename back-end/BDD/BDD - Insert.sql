@@ -5,7 +5,7 @@ USE lagoon;
 INSERT INTO user 
 (user_id, created, first_name, last_name, password, user_name)
 VALUES 
-(0, curdate(), 'João', 'Luís', '123', 'joao-luis');
+(0, curdate(), 'João', 'Luís', '123', 'jl');
 
 :: PHOTO ::
 
