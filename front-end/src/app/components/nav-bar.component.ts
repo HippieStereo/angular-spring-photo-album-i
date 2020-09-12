@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import { LoginService } from '../services/login.service';
 
 @Component({
     selector: 'nav-bar',
@@ -9,6 +10,20 @@ export class NavBar{
 
     myLocalStrorage;
 
-    public onClick(){}
+    constructor(public loginService: LoginService){
+
+        this.myLocalStrorage = localStorage;
+
+    }
+
+    public onClick(){
+
+        if(this.loginService.checkLogin()){
+
+            this.loginService.logout();
+
+        }
+
+    }
 
 }
