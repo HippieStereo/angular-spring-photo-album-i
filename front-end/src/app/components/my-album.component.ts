@@ -13,7 +13,7 @@ import {Router} from '@angular/router';
  export class MyAlbum{
 
     photos: Photo[];
-    private user;
+    private user: User;
     private selectedPhoto: Photo;
 
     constructor(private photoService: PhotoService, private router: Router, private userService: UserService){

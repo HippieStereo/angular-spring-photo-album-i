@@ -11,7 +11,7 @@ import com.hippiestereo.model.Photo;
 import com.hippiestereo.service.PhotoService;
 
 @RestController
-@RequestMapping("/photos")
+@RequestMapping("/photo")
 public class PhotoController {
 
     @Autowired

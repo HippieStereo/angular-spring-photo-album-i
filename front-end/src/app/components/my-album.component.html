@@ -3,6 +3,7 @@
     <div class='photo-list'>
 
       <div clas="ui grid">
+
          <div class="ui horizontal segments" >
              
            <span *ngFor="let photo of photos" >
@@ -14,9 +15,11 @@
                <div class="ui grid">
 
                    <div class="twelve wide column left aligned">
-                       <strong>{{photo.title}}</strong><br/>
+                       <strong>{{photo.title}}</strong>
                    </div>
 
+                   <br/>
+                   
                    <div class="four wide column right aligned">
                      {{photo.likes}} Likes
                    </div>

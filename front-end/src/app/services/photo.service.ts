@@ -10,7 +10,7 @@ export class PhotoService{
 
     getPhotos(){
 
-        let url = "http://localhost:8080/photos/allPhotos";
+        let url = "http://localhost:8080/photo/allPhotos";
 
         return this.http.get(url);
 
