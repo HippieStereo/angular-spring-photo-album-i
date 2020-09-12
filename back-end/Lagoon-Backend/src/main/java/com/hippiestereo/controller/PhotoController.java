@@ -11,13 +11,13 @@ import com.hippiestereo.model.Photo;
 import com.hippiestereo.service.PhotoService;
 
 @RestController
-@RequestMapping("/photo")
+@RequestMapping("/photos")
 public class PhotoController {
 
     @Autowired
     private PhotoService photoService;
 
-    @GetMapping(value = "/photos/allPhotos")
+    @GetMapping(value = "/allPhotos")
     public List<Photo> getAllPhotos () {
     	
         return photoService.findAll();
