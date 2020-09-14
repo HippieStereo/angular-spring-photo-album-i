@@ -4,6 +4,8 @@ import { HomeComponent } from './components/home.component';
 import { Register } from './components/register.component';
 import { Login } from './components/login.component';
 import { MyAlbum } from './components/my-album.component';
+import { AddPhoto } from './components/add-photo.component';
+import { ImageDetail } from './components/image-detail.component';
 
 const appRoutes: Routes = [
     {
@@ -26,6 +28,14 @@ const appRoutes: Routes = [
     {
         path: 'my-album',
         component: MyAlbum
+    },
+    {
+        path: 'add-photo',
+        component: AddPhoto
+    },
+    {
+        path: 'image-detail/:id',
+        component: ImageDetail
     }
 ];
 
