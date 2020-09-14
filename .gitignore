@@ -3,7 +3,7 @@
 
 # Log file
 *.log
-back-end/LOGS/
+remote-profile/
 
 # BlueJ files
 *.ctxt
