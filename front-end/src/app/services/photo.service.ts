@@ -16,31 +16,31 @@ export class PhotoService{
 
     }
 
-    /*getPhotosById(photoId: number){
+    getPhotosById(photoId: number){
 
-        let tokenUrl_1 = "http://localhost:8080/rest/photo/photoId";
-        let headers_1 = new Headers({'Content-Type' : 'application/json', 'Authorization' : 'Bearer ' + localStorage.getItem("token")});
+        let url = "http://localhost:8080/rest/photo/photoId";
+        let headers = new HttpHeaders({'Content-Type' : 'application/json', 'Authorization' : 'Bearer ' + localStorage.getItem("token")});
 
-        return this.http.post(tokenUrl_1, JSON.stringify(photoId), {headers: headers_1});
-
-    }*/
-
-    getPhotosByUser(user: User){
-
-        let tokenUrl_1 = "http://localhost:8080/rest/photo/photoId";
-        let headers_1 = new HttpHeaders({'Content-Type' : 'application/json', 'Authorization' : 'Bearer ' + localStorage.getItem("token")});
-
-        return this.http.post(tokenUrl_1, JSON.stringify(user), {headers: headers_1});
+        return this.http.post(url, JSON.stringify(photoId), {headers: headers});
 
     }
 
-    /*updatePhoto(photo: Photo){
+    getPhotosByUser(user: User){
 
-        let tokenUrl_1 = "http://localhost:8080/rest/photo/photoId";
-        let headers_1 = new Headers({'Content-Type' : 'application/json', 'Authorization' : 'Bearer ' + localStorage.getItem("token")});
+        let url = "http://localhost:8080/rest/photo/user";
+        let headers = new HttpHeaders({'Content-Type' : 'application/json', 'Authorization' : 'Bearer ' + localStorage.getItem("token")});
 
-        return this.http.post(tokenUrl_1, JSON.stringify(photo), {headers: headers_1});
+        return this.http.post(url, JSON.stringify(user), {headers: headers});
 
-    }*/
+    }
+
+    updatePhoto(photo: Photo){
+
+        let url = "http://localhost:8080/rest/photo/update";
+        let headers = new HttpHeaders({'Content-Type' : 'application/json', 'Authorization' : 'Bearer ' + localStorage.getItem("token")});
+
+        return this.http.post(url, JSON.stringify(photo), {headers: headers});
+
+    }
 
 }

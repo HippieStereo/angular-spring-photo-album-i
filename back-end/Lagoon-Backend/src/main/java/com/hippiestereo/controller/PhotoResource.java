@@ -69,7 +69,7 @@ public class PhotoResource {
 		
 	}
 	
-	@RequestMapping(value = "/photo/photId", method = RequestMethod.POST)
+	@RequestMapping(value = "/photo/photoId", method = RequestMethod.POST)
 	public Photo getPhotosByPhotoId(@RequestBody Long photoId) {
 		
 		return photoService.findByPhotoId(photoId);

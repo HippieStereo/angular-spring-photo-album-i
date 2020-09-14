@@ -22,15 +22,13 @@ import {Router} from '@angular/router';
 
             user => {
 
-                this.user = JSON.parse(JSON.parse(JSON.stringify(user))._body);
-
-                console.log(this.user);
+                this.user = JSON.parse(JSON.stringify(user));
 
                 this.photoService.getPhotosByUser(this.user).subscribe(
 
                     photos => {
 
-                        this.photos = JSON.parse(JSON.parse(JSON.stringify(user))._body).photoList;
+                        this.photos = JSON.parse(JSON.stringify(photos));
 
                     },
 
