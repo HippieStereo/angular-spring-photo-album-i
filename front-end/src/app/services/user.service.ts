@@ -18,4 +18,10 @@ export class UserService{
 
     }
 
+    updateUser(user: User) {
+        let tokenUrl = "http://localhost:8080/rest/user/update";
+        let headers = new HttpHeaders({'Content-Type': 'application/json', 'Authorization': 'Bearer '+ localStorage.getItem("token")});
+        return this.http.post(tokenUrl, JSON.stringify(user), {headers: headers});
+      }
+
 }
