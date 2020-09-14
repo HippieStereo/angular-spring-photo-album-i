@@ -37,7 +37,7 @@ rxjs                         6.6.2
 
 DEBUG
 
-/Applications/BROWSER/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --user-data-dir=remote-profile
+https://www.it-swarm.dev/pt/angular/depurar-com-o-visual-studio-code-nao-funciona/827641181/
 
 BDD
 
