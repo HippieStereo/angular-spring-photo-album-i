@@ -14,7 +14,7 @@
         Home
       </a>
 
-      <a class="item" routerLink="/my-album" routerLinkActive="active">
+      <a *ngIf = "loginService.checkLogin()" class="item" routerLink="/my-album" routerLinkActive="active">
         My Album
       </a>
 
