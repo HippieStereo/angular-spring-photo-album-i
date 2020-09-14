@@ -35,6 +35,10 @@ Package                      Version
 @schematics/update           0.1001.0
 rxjs                         6.6.2
 
+DEBUG
+
+/Applications/BROWSER/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --user-data-dir=remote-profile
+
 BDD
 
 utf8 Unicode ci
