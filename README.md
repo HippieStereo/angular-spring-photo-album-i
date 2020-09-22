@@ -1,4 +1,4 @@
-# angular-spring-photo-album-i
+# Project
 
 **Version 1.0.0**
 
