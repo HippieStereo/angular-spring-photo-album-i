@@ -9,7 +9,7 @@ remote-profile/
 *.ctxt
 
 # root info
-/info.txt
+/INFO.txt
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
