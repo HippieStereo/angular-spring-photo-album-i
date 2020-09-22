@@ -8,6 +8,9 @@ remote-profile/
 # BlueJ files
 *.ctxt
 
+# root info
+/info.txt
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
